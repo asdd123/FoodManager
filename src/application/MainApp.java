@@ -1,4 +1,4 @@
-package anon.application;
+package application;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -19,11 +19,11 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 
-import anon.application.view.FoodController;
-import anon.application.model.Food;
-import anon.application.model.FoodDAO;
-import anon.application.model.FoodListWrapper;
-import anon.application.view.FoodEditDialogController;
+import application.view.FoodController;
+import application.model.Food;
+import application.model.FoodDAO;
+import application.model.FoodListWrapper;
+import application.view.FoodEditDialogController;
 
 public class MainApp extends Application {
 
@@ -32,9 +32,6 @@ public class MainApp extends Application {
 	private FoodDAO fooddao;
 	
 	public MainApp() {
-	
-	
-	
 	
 	}
 
@@ -141,9 +138,7 @@ public class MainApp extends Application {
 					fooddao.getVegetablesAndFruitProductsData().add(foodProduct);
 				}
 			}
-			
 			setFoodFilePath(file);
-		
 		} catch (Exception e)	{
 			e.printStackTrace();
 			Alert alert = new Alert(AlertType.ERROR);
