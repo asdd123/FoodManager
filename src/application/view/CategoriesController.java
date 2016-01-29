@@ -8,6 +8,7 @@ import application.MainApp;
 import application.model.DateUtil;
 import application.model.Food;
 import application.model.FoodDAO;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
@@ -95,19 +96,26 @@ public abstract class CategoriesController implements Initializable {
 
 	public void scan(Object o) {
 		boolean isListEmpty;
-
+		ObservableList<Food> productsList = null;
+		
 		if (o.getClass() == GrainProductsController.class) {
 			isListEmpty = application.getFoodDAO().getGrainProductsData().isEmpty();
+			productsList = application.getFoodDAO().getGrainProductsData();
 		} else if (o.getClass() == MeatProductsController.class) {
 			isListEmpty = application.getFoodDAO().getMeatAndEggsProductsData().isEmpty();
+			productsList = application.getFoodDAO().getMeatAndEggsProductsData();
 		} else if (o.getClass() == MilkProductsController.class) {
 			isListEmpty = application.getFoodDAO().getMilkProductsData().isEmpty();
+			productsList = application.getFoodDAO().getMilkProductsData();
 		} else if (o.getClass() == OilProductsController.class) {
 			isListEmpty = application.getFoodDAO().getOilProductsData().isEmpty();
+			productsList = application.getFoodDAO().getOilProductsData();
 		} else if (o.getClass() == SugarProductsController.class) {
 			isListEmpty = application.getFoodDAO().getSugarProductsData().isEmpty();
+			productsList = application.getFoodDAO().getSugarProductsData();
 		} else if (o.getClass() == VegetablesAndFruitsController.class) {
 			isListEmpty = application.getFoodDAO().getVegetablesAndFruitProductsData().isEmpty();
+			application.getFoodDAO().getVegetablesAndFruitProductsData();
 		} else {
 			isListEmpty = true;
 		}
@@ -115,7 +123,7 @@ public abstract class CategoriesController implements Initializable {
 		String errorMsg = "";
 		if (!isListEmpty) {
 
-			for (Food food : application.getFoodDAO().getGrainProductsData()) {
+			for (Food food : productsList) {
 				LocalDate foodDate = food.getExpirationDate();
 				LocalDate todaysDate = java.time.LocalDate.now();
 				if (foodDate.getYear() < todaysDate.getYear()) {
