@@ -8,11 +8,11 @@ import javafx.fxml.FXML;
 
 public class OilProductsController extends CategoriesController {
 
-	private static int category = 4;
+	private static final int CATEGORY = 4;
 
 	@FXML
 	public void handleNewFood() {
-		application.goToEditDialogFood(category);
+		application.goToEditDialogFood(CATEGORY);
 	}
 
 	@FXML
