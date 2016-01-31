@@ -43,11 +43,8 @@ public abstract class CategoriesController implements Initializable {
 
 	public MainApp application;
 	public FoodDAO fooddao;
-	public int selectedCategory;
 
 	public abstract void handleNewFood();
-
-	public abstract int getSelectedCategory();
 
 	public abstract void setApp(MainApp application);
 
@@ -115,7 +112,7 @@ public abstract class CategoriesController implements Initializable {
 			productsList = application.getFoodDAO().getSugarProductsData();
 		} else if (o.getClass() == VegetablesAndFruitsController.class) {
 			isListEmpty = application.getFoodDAO().getVegetablesAndFruitProductsData().isEmpty();
-			application.getFoodDAO().getVegetablesAndFruitProductsData();
+			productsList = application.getFoodDAO().getVegetablesAndFruitProductsData();
 		} else {
 			isListEmpty = true;
 		}

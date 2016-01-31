@@ -60,7 +60,6 @@ public class FoodEditDialogController implements Initializable {
 			if (selectedCategory == 1) {
 				fooddao.getGrainProductsData().add(food);
 				application.goToOverview();
-				;
 			} else if (selectedCategory == 2) {
 				fooddao.getMeatAndEggsProductsData().add(food);
 				application.goToOverview();

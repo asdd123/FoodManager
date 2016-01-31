@@ -5,13 +5,14 @@ import application.MainApp;
 import application.model.Food;
 
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 
-public class MilkProductsController extends CategoriesController implements Initializable {
+public class MilkProductsController extends CategoriesController {
+
+	private static int category = 3;
 
 	@FXML
 	public void handleNewFood() {
-		application.goToEditDialogFood(3);
+		application.goToEditDialogFood(category);
 	}
 
 	@FXML
@@ -32,10 +33,6 @@ public class MilkProductsController extends CategoriesController implements Init
 
 	private void showMilkProductDetails(Food food) {
 		super.showProductDetails(food);
-	}
-
-	public int getSelectedCategory() {
-		return selectedCategory;
 	}
 
 	public void setApp(MainApp application) {
