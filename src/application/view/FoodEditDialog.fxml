@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="426.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.FoodEditDialogController">
+<AnchorPane prefHeight="426.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.FoodEditDialogController">
    <children>
       <GridPane layoutX="139.0" layoutY="50.0" prefHeight="295.0" prefWidth="401.0">
         <columnConstraints>

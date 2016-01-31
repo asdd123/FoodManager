@@ -1,4 +1,4 @@
-package application.view;
+package application.controller;
 
 import application.MainApp;
 
@@ -6,9 +6,9 @@ import application.model.Food;
 
 import javafx.fxml.FXML;
 
-public class MilkProductsController extends CategoriesController {
+public class GrainProductsController extends CategoriesController {
 
-	private static int category = 3;
+	private static int category = 1;
 
 	@FXML
 	public void handleNewFood() {
@@ -27,23 +27,23 @@ public class MilkProductsController extends CategoriesController {
 
 	@FXML
 	public void scan() {
-		super.scan(new MilkProductsController());
-
+		super.scan(new GrainProductsController());
 	}
 
-	private void showMilkProductDetails(Food food) {
+	private void showGrainProductDetails(Food food) {
 		super.showProductDetails(food);
 	}
 
 	public void setApp(MainApp application) {
 		fooddao = application.getFoodDAO();
-		foodTable.setItems(fooddao.getMilkProductsData());
+		foodTable.setItems(fooddao.getGrainProductsData());
 		this.application = application;
 		nameColumn.setCellValueFactory(cellData -> cellData.getValue().getNameProperty());
 
-		foodTable.getSelectionModel().selectedItemProperty()
-				.addListener((observable, oldValue, newValue) -> showMilkProductDetails(newValue));
+		showGrainProductDetails(null);
 
+		foodTable.getSelectionModel().selectedItemProperty()
+				.addListener((observable, oldValue, newValue) -> showGrainProductDetails(newValue));
 	}
 
 }

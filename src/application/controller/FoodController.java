@@ -1,11 +1,11 @@
-package application.view;
+package application.controller;
 
 import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 import application.MainApp;
-import application.view.GrainProductsController;
+import application.controller.GrainProductsController;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.stage.FileChooser;

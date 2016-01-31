@@ -19,11 +19,11 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 
-import application.view.FoodController;
+import application.controller.FoodController;
 import application.model.Food;
 import application.model.FoodDAO;
 import application.model.FoodListWrapper;
-import application.view.FoodEditDialogController;
+import application.controller.FoodEditDialogController;
 
 public class MainApp extends Application {
 

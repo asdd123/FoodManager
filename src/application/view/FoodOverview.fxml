@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="515.0" maxWidth="675.0" prefHeight="426.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.FoodController">
+<AnchorPane maxHeight="515.0" maxWidth="675.0" prefHeight="426.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.FoodController">
    <children>
       <Button id="oilButton" layoutX="224.0" layoutY="225.0" mnemonicParsing="false" onAction="#goToOilProducts" prefHeight="200.0" prefWidth="225.0" text="Tłuszcze" />
       <Button id="vfButton" layoutY="225.0" mnemonicParsing="false" onAction="#goToVegetablesAndFruits" prefHeight="200.0" prefWidth="225.0" text="Warzywa, owoce, przetwory" />
