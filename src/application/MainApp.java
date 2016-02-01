@@ -83,7 +83,9 @@ public class MainApp extends Application {
 		} finally {
 			in.close();
 		}
+		
 		scene = new Scene(page);
+		
 		if(fxml.equals("view/FoodOverview.fxml"))	{
 			String css = this.getClass().getResource("view/FoodOverview.css").toExternalForm();
 			scene.getStylesheets().add(css);

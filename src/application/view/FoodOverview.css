@@ -1,0 +1,71 @@
+.oilButton	{
+	-fx-font-size: 22pt;
+	-fx-font-family: "Segoe UI Semibold";
+	-fx-text-fill: #000000;
+	-fx-background-color: #FFCC00;
+	-fx-wrap-text: true;
+}
+
+.oilButton:hover {
+	-fx-background-color: derive(#FFCC00, 50%);
+}
+
+.vfButton	{
+	-fx-font-size: 22pt;
+	-fx-font-family: "Segoe UI Semibold";
+	-fx-text-fill: #000000;
+	-fx-background-color: #006600;
+	-fx-wrap-text: true;
+}
+
+.vfButton:hover	{
+	-fx-background-color: derive(#006600, 50%);
+}
+
+.sugarButton	{
+	-fx-font-size: 22pt;
+	-fx-font-family: "Segoe UI Semibold";
+	-fx-text-fill: #000000;
+	-fx-background-color: #FF99FF;
+	-fx-wrap-text: true;
+}
+
+.sugarButton:hover	{
+	-fx-background-color: derive(#FF99FF, 50%);
+}
+
+.grainButton	{
+	-fx-font-size: 22pt;
+	-fx-font-family: "Segoe UI Semibold";
+	-fx-text-fill: #000000;
+	-fx-background-color: #CC9900;
+	-fx-wrap-text: true;
+}
+
+.grainButton:hover	{
+	-fx-background-color: derive(#CC9900, 50%);
+}
+
+.milkButton	{
+	-fx-font-size: 22pt;
+	-fx-font-family: "Segoe UI Semibold";
+	-fx-text-fill: #000000;
+	-fx-background-color: #C0C0C0;
+	-fx-wrap-text: true;
+}
+
+.milkButton:hover	{
+	-fx-background-color: derive(#C0C0C0, 50%);
+}
+
+.meatButton	{
+	-fx-font-size: 22pt;
+	-fx-font-family: "Segoe UI Semibold";
+	-fx-text-fill: #000000;
+	-fx-background-color: #990033;
+	-fx-wrap-text: true;
+}
+
+.meatButton:hover	{
+	-fx-background-color: derive(#990033, 50%);
+}

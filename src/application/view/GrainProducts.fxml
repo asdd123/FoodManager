@@ -54,9 +54,9 @@
          </children>
       </GridPane>
       <Label layoutX="235.0" layoutY="27.0" text="Produkty zbożowe" />
-      <Button layoutX="235.0" layoutY="387.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="113.0" text="Powrót" />
-      <Button layoutX="599.0" layoutY="387.0" mnemonicParsing="false" onAction="#handleDelete" text="Usuń" />
-      <Button layoutX="402.0" layoutY="387.0" mnemonicParsing="false" onAction="#handleNewFood" text="Nowy" />
-      <Button layoutX="489.0" layoutY="387.0" mnemonicParsing="false" onAction="#scan" text="Skanuj" />
+      <Button layoutX="235.0" layoutY="387.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="60.0" text="Powrót" />
+      <Button layoutX="595.0" layoutY="387.0" mnemonicParsing="false" onAction="#handleDelete" prefHeight="25.0" prefWidth="60.0" text="Usuń" />
+      <Button layoutX="355.0" layoutY="387.0" mnemonicParsing="false" onAction="#handleNewFood" prefHeight="25.0" prefWidth="60.0" text="Nowy" />
+      <Button layoutX="475.0" layoutY="387.0" mnemonicParsing="false" onAction="#scan" prefHeight="25.0" prefWidth="60.0" text="Skanuj" />
    </children>
 </AnchorPane>
