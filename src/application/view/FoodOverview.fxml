@@ -12,42 +12,42 @@
 	<children>
 		<Button layoutX="224.0" layoutY="225.0" mnemonicParsing="false"
 			onAction="#goToOilProducts" prefHeight="200.0" prefWidth="225.0"
-			text="Tłuszcze" textAlignment="CENTER">
+			text="Tłuszcze" textAlignment="CENTER" styleClass="oilButton">
 			<font>
 				<Font name="System Bold" size="20.0" />
 			</font>
 		</Button>
 		<Button layoutY="225.0" mnemonicParsing="false"
 			onAction="#goToVegetablesAndFruits" prefHeight="200.0" prefWidth="225.0"
-			text="Warzywa, owoce, przetwory" textAlignment="CENTER" wrapText="true">
+			text="Warzywa, owoce, przetwory" textAlignment="CENTER" wrapText="true" styleClass="vfButton">
 			<font>
 				<Font name="System Bold" size="20.0" />
 			</font>
 		</Button>
 		<Button layoutX="449.0" layoutY="225.0" mnemonicParsing="false"
 			onAction="#goToSugarProducts" prefHeight="200.0" prefWidth="225.0"
-			text="Cukier i słodycze, używki" textAlignment="CENTER" wrapText="true">
+			text="Cukier i słodycze, używki" textAlignment="CENTER" wrapText="true" styleClass="sugarButton">
 			<font>
 				<Font name="System Bold" size="20.0" />
 			</font>
 		</Button>
 		<Button layoutY="27.0" mnemonicParsing="false" onAction="#goToGrainProducts"
 			prefHeight="200.0" prefWidth="225.0" text="Produkty zbożowe"
-			textAlignment="CENTER">
+			textAlignment="CENTER" styleClass="grainButton">
 			<font>
 				<Font name="System Bold" size="20.0" />
 			</font>
 		</Button>
 		<Button layoutX="224.0" layoutY="27.0" mnemonicParsing="false"
 			onAction="#goToMilkProducts" prefHeight="200.0" prefWidth="225.0"
-			text="Mleko i produkty mleczne" textAlignment="CENTER" wrapText="true">
+			text="Mleko i produkty mleczne" textAlignment="CENTER" wrapText="true" styleClass="milkButton">
 			<font>
 				<Font name="System Bold" size="20.0" />
 			</font>
 		</Button>
 		<Button layoutX="449.0" layoutY="27.0" mnemonicParsing="false"
 			onAction="#goToMeatProducts" prefHeight="200.0" prefWidth="225.0"
-			text="Mięso, wędliny, ryby, jaja" textAlignment="CENTER" wrapText="true">
+			text="Mięso, wędliny, ryby, jaja" textAlignment="CENTER" wrapText="true" styleClass="meatButton">
 			<font>
 				<Font name="System Bold" size="20.0" />
 			</font>

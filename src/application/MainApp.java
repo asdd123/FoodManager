@@ -30,6 +30,7 @@ public class MainApp extends Application {
 	private Stage primaryStage;
 	private MainApp application;
 	private FoodDAO fooddao;
+	private Scene scene;
 	
 	public MainApp() {
 	
@@ -82,7 +83,12 @@ public class MainApp extends Application {
 		} finally {
 			in.close();
 		}
-		Scene scene = new Scene(page);
+		scene = new Scene(page);
+		if(fxml.equals("view/FoodOverview.fxml"))	{
+			String css = this.getClass().getResource("view/FoodOverview.css").toExternalForm();
+			scene.getStylesheets().add(css);
+		}
+		
 		primaryStage.setScene(scene);
 		return (Initializable) loader.getController();
 	}
