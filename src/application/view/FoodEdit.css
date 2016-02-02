@@ -1,0 +1,25 @@
+.anchorpane {
+	-fx-background-color: #23238E;
+}
+
+.button {
+	-fx-font-size: 8pt;
+	-fx-font-family: "Segoe UI Semibold";
+	-fx-text-fill: #FFFFFF;
+	-fx-background-color: #1F1F1F;
+	-fx-wrap-text: true;
+}
+
+.label {
+	-fx-font-size: 12pt;
+	-fx-font-family: "Segoe UI Semibold";
+	-fx-text-fill: #FFFFFF;
+	-fx-wrap-text: true;
+}
+
+.text-field {
+	-fx-font-size: 10pt;
+	-fx-font-family: "Segoe UI Semibold";
+	-fx-text-fill: #FFFFFF;
+	-fx-background-color: #3F3F3F
+}

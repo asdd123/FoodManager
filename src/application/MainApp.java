@@ -86,13 +86,16 @@ public class MainApp extends Application {
 		
 		scene = new Scene(page);
 		
+		String css;
+		
 		if(fxml.equals("view/FoodOverview.fxml"))	{
-			String css = this.getClass().getResource("view/FoodOverview.css").toExternalForm();
+			css = this.getClass().getResource("view/FoodOverview.css").toExternalForm();
 			scene.getStylesheets().add(css);
-		} else if(fxml.equals("FoodEditDialog.fxml"))	{
-			
+		} else if(fxml.equals("view/FoodEditDialog.fxml"))	{
+			css = this.getClass().getResource("view/FoodEdit.css").toExternalForm();
+			scene.getStylesheets().add(css);
 		} else	{
-			String css = this.getClass().getResource("view/Categories.css").toExternalForm();
+			css = this.getClass().getResource("view/Categories.css").toExternalForm();
 			scene.getStylesheets().add(css);
 		}
 		
