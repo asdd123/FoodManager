@@ -1,71 +1,71 @@
 .oilButton	{
 	-fx-font-size: 22pt;
 	-fx-font-family: "Segoe UI Semibold";
-	-fx-text-fill: #000000;
-	-fx-background-color: #FFCC00;
+	-fx-text-fill: #FFFFFF;
+	-fx-background-color: #FF9900;
 	-fx-wrap-text: true;
 }
 
 .oilButton:hover {
-	-fx-background-color: derive(#FFCC00, 50%);
+	-fx-background-color: derive(#FF9900, 25%);
 }
 
 .vfButton	{
 	-fx-font-size: 22pt;
 	-fx-font-family: "Segoe UI Semibold";
-	-fx-text-fill: #000000;
-	-fx-background-color: #006600;
+	-fx-text-fill: #FFFFFF;
+	-fx-background-color: #003300;
 	-fx-wrap-text: true;
 }
 
 .vfButton:hover	{
-	-fx-background-color: derive(#006600, 50%);
+	-fx-background-color: derive(#003300, 25%);
 }
 
 .sugarButton	{
 	-fx-font-size: 22pt;
 	-fx-font-family: "Segoe UI Semibold";
-	-fx-text-fill: #000000;
-	-fx-background-color: #FF99FF;
+	-fx-text-fill: #FFFFFF;
+	-fx-background-color: #990099;
 	-fx-wrap-text: true;
 }
 
 .sugarButton:hover	{
-	-fx-background-color: derive(#FF99FF, 50%);
+	-fx-background-color: derive(#990099, 25%);
 }
 
 .grainButton	{
 	-fx-font-size: 22pt;
 	-fx-font-family: "Segoe UI Semibold";
-	-fx-text-fill: #000000;
-	-fx-background-color: #CC9900;
+	-fx-text-fill: #FFFFFF;
+	-fx-background-color: #663300;
 	-fx-wrap-text: true;
 }
 
 .grainButton:hover	{
-	-fx-background-color: derive(#CC9900, 50%);
+	-fx-background-color: derive(#663300, 25%);
 }
 
 .milkButton	{
 	-fx-font-size: 22pt;
 	-fx-font-family: "Segoe UI Semibold";
-	-fx-text-fill: #000000;
-	-fx-background-color: #C0C0C0;
+	-fx-text-fill: #FFFFFF;
+	-fx-background-color: #696969;
 	-fx-wrap-text: true;
 }
 
 .milkButton:hover	{
-	-fx-background-color: derive(#C0C0C0, 50%);
+	-fx-background-color: derive(#696969, 25%);
 }
 
 .meatButton	{
 	-fx-font-size: 22pt;
 	-fx-font-family: "Segoe UI Semibold";
-	-fx-text-fill: #000000;
-	-fx-background-color: #990033;
+	-fx-text-fill: #FFFFFF;
+	-fx-background-color: #660033;
 	-fx-wrap-text: true;
 }
 
 .meatButton:hover	{
-	-fx-background-color: derive(#990033, 50%);
+	-fx-background-color: derive(#660033, 25%);
 }

@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="515.0" maxWidth="675.0" prefHeight="426.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.GrainProductsController">
+<AnchorPane styleClass="mainPane" maxHeight="515.0" maxWidth="675.0" prefHeight="426.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.GrainProductsController">
    <children>
       <AnchorPane layoutY="27.0" prefHeight="399.0" prefWidth="200.0">
          <children>
@@ -16,7 +16,7 @@
             </TableView>
          </children>
       </AnchorPane>
-      <GridPane styleClass="GridPane" layoutX="270.0" layoutY="72.0" prefHeight="273.0" prefWidth="316.0">
+      <GridPane styleClass="gridPane" layoutX="270.0" layoutY="72.0" prefHeight="273.0" prefWidth="316.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -33,27 +33,27 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label styleClass="label" text="Nazwa" />
-            <Label styleClass="label" text="Producent" GridPane.rowIndex="1" />
-            <Label styleClass="label" text="Objętość" GridPane.rowIndex="3" />
-            <Label styleClass="label" text="Ilość sztuk" GridPane.rowIndex="4" />
-            <Label styleClass="label" text="Cena" GridPane.rowIndex="5" />
-            <Label styleClass="label" text="Data zakupu" GridPane.rowIndex="6" />
-            <Label fx:id="nameLabel" text="-" GridPane.columnIndex="1" />
-            <Label fx:id="producerLabel" text="-" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Label fx:id="weightLabel" text="-" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Label fx:id="volumeLabel" text="-" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Label styleClass="label" text="Waga" GridPane.rowIndex="2" />
-            <Label fx:id="piecesLabel" text="-" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <Label fx:id="priceLabel" text="-" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-            <Label fx:id="purchaseDateLabel" text="-" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-            <Label styleClass="label" text="Data dzisiejsza" GridPane.rowIndex="7" />
-            <Label styleClass="label" text="Data ważności" GridPane.rowIndex="8" />
-            <Label fx:id="todaysDateLabel" text="-" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-            <Label fx:id="expirationDateLabel" text="-" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Label styleClass="gridPaneLabel" text="Nazwa" />
+            <Label styleClass="gridPaneLabel" text="Producent" GridPane.rowIndex="1" />
+            <Label styleClass="gridPaneLabel" text="Objętość" GridPane.rowIndex="3" />
+            <Label styleClass="gridPaneLabel" text="Ilość sztuk" GridPane.rowIndex="4" />
+            <Label styleClass="gridPaneLabel" text="Cena" GridPane.rowIndex="5" />
+            <Label styleClass="gridPaneLabel" text="Data zakupu" GridPane.rowIndex="6" />
+            <Label styleClass="gridPaneLabel" fx:id="nameLabel" text="-" GridPane.columnIndex="1" />
+            <Label styleClass="gridPaneLabel" fx:id="producerLabel" text="-" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label styleClass="gridPaneLabel" fx:id="weightLabel" text="-" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label styleClass="gridPaneLabel" fx:id="volumeLabel" text="-" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label styleClass="gridPaneLabel" text="Waga" GridPane.rowIndex="2" />
+            <Label styleClass="gridPaneLabel" fx:id="piecesLabel" text="-" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label styleClass="gridPaneLabel" fx:id="priceLabel" text="-" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label styleClass="gridPaneLabel" fx:id="purchaseDateLabel" text="-" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label styleClass="gridPaneLabel" text="Data dzisiejsza" GridPane.rowIndex="7" />
+            <Label styleClass="gridPaneLabel" text="Data ważności" GridPane.rowIndex="8" />
+            <Label styleClass="gridPaneLabel" fx:id="todaysDateLabel" text="-" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label styleClass="gridPaneLabel" fx:id="expirationDateLabel" text="-" GridPane.columnIndex="1" GridPane.rowIndex="8" />
          </children>
       </GridPane>
-      <Label layoutX="235.0" layoutY="27.0" styleClass="title" text="Produkty zbożowe" />
+      <Label layoutX="235.0" layoutY="10.0" styleClass="title" text="Produkty zbożowe" />
       <Button layoutX="235.0" layoutY="387.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="60.0" styleClass="button" text="Powrót" />
       <Button layoutX="595.0" layoutY="387.0" mnemonicParsing="false" onAction="#handleDelete" prefHeight="25.0" prefWidth="60.0" styleClass="button" text="Usuń" />
       <Button layoutX="355.0" layoutY="387.0" mnemonicParsing="false" onAction="#handleNewFood" prefHeight="25.0" prefWidth="60.0" styleClass="button" text="Nowy" />
